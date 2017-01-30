@@ -1,0 +1,24 @@
+[ 2016-11-20T12:01:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.1274s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0469s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.018211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013395s ]
+

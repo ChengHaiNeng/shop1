@@ -1,0 +1,9 @@
+[ 2017-01-30T10:07:21+08:00 ] 127.0.0.1 /Public/Home/images/captcha.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载控制器:Home
+
